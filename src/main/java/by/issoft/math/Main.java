@@ -40,12 +40,12 @@ public class Main {
 
     public static List<String> symmetric(List<String> first, List<String> second) {
         List<String> result = new ArrayList<>(first); //если добавить в скобках значение, то можно не писать логику в 43-45 строчке, программа это делать автоматически
-       // for (String item : first) {
+        // for (String item : first) {
         //    result.add(item);
-       // }
+        // }
         result.addAll(second); //добавить второй перебор
         for (String item2 : second) {
-          //  boolean contains = result.contains(item2);
+            //  boolean contains = result.contains(item2);
             if (result.contains(item2)) { //вместо 48 строчки
                 result.remove(item2);
             } else {
@@ -69,11 +69,11 @@ public class Main {
 
     public static List<String> subtract(List<String> first, List<String> second) {
         List<String> result = new ArrayList<>(first);
-     //   for (String item : first) {
-     //       result.add(item);
-     //   }
+        //   for (String item : first) {
+        //       result.add(item);
+        //   }
         for (String item2 : second) {
-       //     boolean contains = result.contains(item2);
+            //     boolean contains = result.contains(item2);
             result.remove(item2);
         }
         return result;
