@@ -18,9 +18,9 @@ public class Main {
         String password = "//input[@id='mailbox:password-input']";
         SelenideElement submit = $(By.xpath("//input[@class='o-control']"));
 
-        $(By.xpath(login)).setValue("Valerevna944");
+        $(By.xpath(login)).setValue("xxxxxxxx");
         enterPass.click();
-        $(By.xpath(password)).setValue("Malina270169");
+        $(By.xpath(password)).setValue("xxxxxxx");
         submit.click();
 
         // Open LetterCreation pop-up
