@@ -1,0 +1,4 @@
+< !DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+"valerevna944@mail.ru", "My first email Test", "Hello, I am Valeria and I am writing to myself"
+"valerevna944+1@mail.ru",  "My second email Test", "Hello, I am Valeria and I am writing to myself again"
+"valerevna944+2@mail.ru",  "My third email Test", "Hello, I am Valeria and I am writing to myself again and again"
