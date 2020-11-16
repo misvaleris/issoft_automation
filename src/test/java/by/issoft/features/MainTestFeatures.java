@@ -13,7 +13,7 @@ public class MainTestFeatures {
     Download download = new Download();
     KeyPress keyPress = new KeyPress();
 
-      @Test
+       @Test
     public void dropDownTest() {
         int expectedSelectedOptionValue = dropDownList.clickOnRandomSelect();
         int actualSelectedOptionValue = dropDownList.getSelectedOptionValue();
@@ -21,7 +21,7 @@ public class MainTestFeatures {
         softAssert.assertEquals(actualSelectedOptionValue, expectedSelectedOptionValue, "Fail with select dropdown  option");
     }
 
-      @Test
+        @Test
     public void iFrameTest() {
         String expectedText = "Avada Kedavra";
         iFrame.createNewText(expectedText);
@@ -39,8 +39,17 @@ public class MainTestFeatures {
 
     @Test
     public void keyPressTest() {
-        keyPress.inputKeyPress();
-        //TODO add assert to review expected and actual values
+        String actualValueEscape = keyPress.inputKeyPressEscape();
+        String expectedValueEscape = "You entered: ESCAPE";
+        assertEquals(actualValueEscape, expectedValueEscape, "Escape KeyPress not equals");
+
+        String actualValueTab = keyPress.inputKeyPressTab();
+        String expectedValueTab = "You entered: TAB";
+        assertEquals(actualValueTab, expectedValueTab, "Tab KeyPress not equals");
+
+        String actualValueLetter = keyPress.inputKeyPressLetter();
+        String expectedValueLetter = "You entered: A";
+        assertEquals(actualValueLetter, expectedValueLetter, "Letter KeyPress not equals");
     }
 
 }

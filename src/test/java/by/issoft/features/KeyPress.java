@@ -10,16 +10,20 @@ public class KeyPress {
     SelenideElement inputField = $(By.xpath("//input[@id='target']"));
     SelenideElement resultValue = $(By.xpath("//p[@id='result']"));
 
-    public void inputKeyPress() {
+    public String inputKeyPressEscape() {
         open("https://the-internet.herokuapp.com/key_presses");
         inputField.click();
-        inputField.pressEnter();
-        String enterValue = resultValue.getOwnText();
         inputField.pressEscape();
-        String escapeValue = resultValue.getOwnText();
+        return resultValue.getOwnText();
+    }
+
+    public String inputKeyPressTab() {
         inputField.pressTab();
-        String tabValue = resultValue.getOwnText();
-        inputField.setValue("a");
-        String textValue = resultValue.getOwnText();
+        return resultValue.getOwnText();
+    }
+
+    public String inputKeyPressLetter() {
+        inputField.setValue("A");
+        return resultValue.getOwnText();
     }
 }
