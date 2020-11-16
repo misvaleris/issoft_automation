@@ -12,6 +12,7 @@ public class LoginPage {
     String passwordField = "//input[@id='mailbox:password-input']";
     SelenideElement submitPasswordButton = $(By.xpath("//input[@class='o-control']"));
     SelenideElement logOutButton = $(By.xpath("//a[@id='PH_logoutLink']"));
+    SelenideElement logInButtonForNextUser = $(By.xpath("//a[@id='PH_authLink']"));
 
     public void login(String email, String password) {
         open("https://mail.ru");
@@ -20,7 +21,12 @@ public class LoginPage {
         $(By.xpath(passwordField)).setValue(password);
         submitPasswordButton.click();
     }
-    public void logOut(){
+
+    public void logOutCurrentUser(){
         logOutButton.click();
+    }
+
+    public void logInNextUser(){
+        logInButtonForNextUser.click();
     }
 }

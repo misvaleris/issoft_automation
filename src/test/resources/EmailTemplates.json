@@ -1,32 +1,32 @@
 [
   {
-    "email": "********",
+    "email": "val***@mail.ru",
     "password": "********",
     "lettersData":
     [
       {
-        "letterReceiverValue": "valerevna944@mail.ru",
+        "letterReceiverValue": "vale***@mail.ru",
         "letterTitleValue": "First Email to me",
         "letterBodyValue": "First Email to me. It works! Wow!"
       },
       {
-        "letterReceiverValue": "valerevna944+1@mail.ru",
+        "letterReceiverValue": "val****@mail.ru",
         "letterTitleValue": "Second Email to +1 user",
         "letterBodyValue": "First Email to +1 user. It works! Wow!"
       }
     ]
   },
   {
-    "email": "valerevna944+1@mail.ru",
-    "password": "********",
+    "email": "val****@mail.ru",
+    "password": "*****",
     "lettersData": [
       {
-        "letterReceiverValue": "valerevna944+2@mail.ru",
+        "letterReceiverValue": "val*****@mail.ru",
         "letterTitleValue": "First Email to +2user",
         "letterBodyValue": "First Email to +2user. It works! Wow!"
       },
       {
-        "letterReceiverValue": "valerevna944+3@mail.ru",
+        "letterReceiverValue": "val******@mail.ru",
         "letterTitleValue": "Second Email to +3 user",
         "letterBodyValue": "First Email to +3 user. It works! Wow!"
       }
